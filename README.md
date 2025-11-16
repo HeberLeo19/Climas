@@ -9,5 +9,8 @@ DESCARGAR LA IMAGEN APP_CLIMA.TAR
 3. http://localhost:8080
 
 
-PARA EJECUTAR DESDE EL CODIGO Y WEB:
-
+PARA EJECUTAR DESDE TERMINAL DEL CODIGO Y WEB:
+1. flutter build web >
+2. docker build -t app_clima .
+3. docker run -d -p 8080:80 --name app_clima_container app_clima
+4. http://localhost:8080
