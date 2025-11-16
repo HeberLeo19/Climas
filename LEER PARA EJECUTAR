@@ -1,0 +1,14 @@
+lib/
+ ├─ models/
+ │   └─ weather.dart       # Modelo de datos del clima
+ ├─ services/
+ │   └─ weather_service.dart # Servicio que consume la API
+ └─ screens/
+     └─ home_page.dart     # Pantalla principal
+Dockerfile                 # Archivo para construir la imagen Docker
+build_and_run.bat          # Script para actualizar y levantar contenedor
+pubspec.yaml               # Dependencias del proyecto
+README.md                  # Este archivo ;)
+
+
+EJECUTAR > flutter build web > docker build -t app_clima .  > docker run -d -p 8080:80 --name app_clima_container app_clima > http://localhost:8080
